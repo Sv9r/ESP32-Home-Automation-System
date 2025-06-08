@@ -40,7 +40,11 @@ This is a smart home automation system built using an ESP32 microcontroller. It 
 | I2C SCL (APDS9960)| 22       | I2C Clock             |
 
 ---
+## Circuit Diagram
 
+![Circuit Diagram](Schematic-Circuit.jpg)
+
+---
 ## Software Requirements
 
 - Arduino IDE (with ESP32 board support)
@@ -99,22 +103,24 @@ This is a smart home automation system built using an ESP32 microcontroller. It 
 
 ---
 
-## Usage
 
-- **Gesture**: Wave hand UP/DOWN for LED, LEFT/RIGHT for Bulb.
-- **Touch**: Tap touch pads to toggle devices.
-- **Voice**: Use Alexa/Google Home to control devices by name.
-- **Logs**: All actions are timestamped and logged to your Google Sheet.
 
----
+## System Workflow
 
-## Notes
+1. The ESP32 connects to WiFi and syncs time from an NTP server.
+2. Gestures (UP/DOWN for LED, LEFT/RIGHT for AC bulb) are read from the APDS-9960 sensor.
+3. Touch sensors on GPIO 14 and 27 provide alternate manual control.
+4. Sinric Pro handles cloud-based voice and mobile app control.
+5. Each device action is logged in a connected Google Sheet.
 
-- Ensure your Google Sheet is shared with the service account email.
-- Relays are active LOW: `LOW` turns ON, `HIGH` turns OFF.
-- Adjust `TOUCH_THRESHOLD` as needed for your hardware.
 
 ---
+
+
+
+
+
+
 
 ## Troubleshooting
 
@@ -126,5 +132,10 @@ This is a smart home automation system built using an ESP32 microcontroller. It 
 | Voice not working      | SinricPro setup incomplete| Check device IDs, keys           |
 
 ---
+## Contributors
 
+- Tanushree Waratkar –  [GitHub](https://github.com/tanushreewaratkar) | [LinkedIn](https://linkedin.com/in/tanushreewaratkar)
+
+- Shivam Rao – [Github](https://github.com/Sv9r) | [LinkedIn](https://www.linkedin.com/in/shivam-rao-a87b55311/)
+---
 For further customization or questions, please refer to the code comments or reach out to the community.

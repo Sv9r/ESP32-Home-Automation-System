@@ -32,7 +32,7 @@ const char PRIVATE_KEY[] PROGMEM =
   "-----BEGIN PRIVATE KEY-----\n"
   " "
   "-----END PRIVATE KEY-----\n";
-const char SPREADSHEET_ID[] = "199Lfua3XMZmVIhHSkoIUCmaiqjV0M6fO8rEp-FazMLo";
+const char SPREADSHEET_ID[] = "YOUR-SPREADSHEET-ID";
 
 // NTP Server for IST
 const char* ntpServer = "in.pool.ntp.org";

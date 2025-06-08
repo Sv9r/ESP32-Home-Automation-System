@@ -23,7 +23,7 @@ This is a smart home automation system built using an ESP32 microcontroller. It 
 | Touch Wires/Pads    | 2        | For touch inputs (GPIO 14, 27)  |
 | Bulb + Holder       | 1        |                                 |
 | LED                 | 1        |                                 |
-| Jumper Wires        | As needed|                                 |
+| Jumper Wires        | As required|                                 |
 | Power Supply        | 1        | Suitable for ESP32 and relays   |
 
 ---

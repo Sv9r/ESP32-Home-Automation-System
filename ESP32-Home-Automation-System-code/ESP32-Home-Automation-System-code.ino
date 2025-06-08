@@ -7,16 +7,16 @@
 #include <time.h>
 
 // WiFi Credentials
-#define WIFI_SSID "Shivamrao"
-#define WIFI_PASS "shivamrao"
+#define WIFI_SSID "YOUR-SSID"
+#define WIFI_PASS "YOUR-PASSWORD"
 
 // Sinric Pro Credentials
-#define APP_KEY "ae4f2911-a4f9-465b-888d-62825c91f066"
-#define APP_SECRET "dd6631ea-5fc5-4974-9b25-15424e44aae2-04468460-7e1b-47f1-b0cf-a0ad07c9f1b7"
+#define APP_KEY "YOUR-APPKEY"
+#define APP_SECRET "YOUR-APP-SECRET"
 
 // Device IDs for Bulb and LED
-#define BULB_DEVICE_ID "6820b4d4dc4a25d5c3cb9780"
-#define LED_DEVICE_ID "68238b6d8ed485694c3568c0"
+#define BULB_DEVICE_ID "YOUR-BULB-ID"
+#define LED_DEVICE_ID "YOUR-LED-ID"
 
 // Pins for Relay and Touch
 #define RELAY_PIN_BULB 23
@@ -26,36 +26,11 @@
 #define TOUCH_THRESHOLD 60
 
 // Google Cloud Credentials (from your JSON)
-#define PROJECT_ID "homeautomation-data"
-#define CLIENT_EMAIL "homeautomation-data@homeautomation-data.iam.gserviceaccount.com"
+#define PROJECT_ID "YOUR-PROJECT-ID"
+#define CLIENT_EMAIL "YOUR-CLIENT-EMAIL"
 const char PRIVATE_KEY[] PROGMEM =
   "-----BEGIN PRIVATE KEY-----\n"
-  "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQD49MQ4O/r0CkWn\n"
-  "drTX+uRgOCax1kUu/gIrPw2URTPrhUvxIAg4d3hwM2l1Xor122HlaCPt/o13cxbt\n"
-  "FzKkbNxtPWUbkolW++hKHrImnjqWy5mVofMAT5MCuSx9beg0wOWrDustNVJLGDyu\n"
-  "XjekV2IT+VTjX4x3HbB3edsfp5PccwoQcHZwb6wsVRGNC/Rl+xbXZmL6fAxlSrai\n"
-  "fObyWu9SAeELj3Mm3xGmrpzpYB+yhWs9jA6KmTk/XKpBJbXMEl7MoVNJqBjhvk3X\n"
-  "LVCS+/p4Mm0f1Nf4T1LLeh/+5l+XrfYJJ3tHfjSyb7S5IcCs0wA+cgbYJ4kfOSon\n"
-  "D6Id1cxbAgMBAAECggEAX929O5xZQCU+ekSbUfoCfEzTFbMZlAVrJ2UR4REe86gy\n"
-  "PKllkPzsa2RYzUH5R8BRe8n03/4gUqmGYAkJTsi+vvAf4ZS1f0Hkyrn0RyuyCwRe\n"
-  "4YBp9yotRaSxzaEHhFztc8f8Zr28MT+lik2spoOhuGhQOHhAOlQ78l4Bs7hPl1kQ\n"
-  "zf3klAK7gg6jqsahxMUEiBMk8uu46KxFTJ6PUndAr5noAScyxfsRugT82287rOjZ\n"
-  "XgG8+UHyduk8H5fvuGIHk2kNWJQ9xIRug1uMIL2WavU2hqZv6PWGl2GLv4kjzXXF\n"
-  "HNFDbZkcDKB9uObK3Oiy/D27ra8B4ssr+Q2cybvXZQKBgQD95F4g42a8GwasyS/4\n"
-  "IUKem2AmRFfGGAEwyatwD3qET4k9verZIv3S8LBbb4y/X4zQnE4AQEEaWWHktOzt\n"
-  "nGUViXxHyQdaMcFzFe+ldwfqHMfh5YoOJzIe0rSFByNLluiwAZxTMke65yThtMMc\n"
-  "xLVKYQqKrOjwR4hDSSHvtLlGJwKBgQD7Behh/6Y0pgQtdKBT8HTLtXT0OgMvvhzI\n"
-  "aH1Zwy+XNroxUwRq+bZJthJ5XYCrunXYNfANrorx9OZBSAhxRNW3NYPQIMlBszyi\n"
-  "hLiQRS0y1hJNEQGb0I/XG+9PrY3ws2QiLfcjKha+ZAkkpv0VFjW+IgLfSYMvbDL7\n"
-  "LuHTLrX8rQKBgQDWCzg7+9q5zQMUmkyBoPC8LHuj50wkakpeqjaJM9NzRmaKkdkz\n"
-  "FCfvNRFJFMMQ9+oMWSn9Vi5Mm3xHRyzTqV0jChSnpFg5ducDMkQmODKI8Zil3lFE\n"
-  "W1EK4VJlMD5WVLR45fK3xRTqAkJ6sl0nnMLGIQe1H88F+xhquXYN00u7UwKBgHCl\n"
-  "zAz+TrXdso47gh9pDuDDw4I97mQkaoI88dOwVdEEDDZKTPc8rGMTw+KW5UErYeru\n"
-  "+ZUKOOwvvIybKL675zRaXZauv+It7w33hWOox4nCq1/OO+ySgZpEvPYCqmnT9yGn\n"
-  "gvpSzvYNqlS6Y2RtHRz/4k4VjTtg0NgLx+efVKfZAoGABc2C9magPqzfzRXdgw/9\n"
-  "GMORAP4MMgPi74//o3xOLDQOIuvXhY/hlsPqMSMcsAMcjowG4vHzxeO3G3xhoRQh\n"
-  "uSOZNUjIksiU8GFyQibf4raynWhR0APo3mknaj3UujR58vSAsqO1m6S7EjFO3bNu\n"
-  "IwRymJR9i1ZFNTkFpcfp2UA=\n"
+  " "
   "-----END PRIVATE KEY-----\n";
 const char SPREADSHEET_ID[] = "199Lfua3XMZmVIhHSkoIUCmaiqjV0M6fO8rEp-FazMLo";
 

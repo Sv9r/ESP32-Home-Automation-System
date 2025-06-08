@@ -134,7 +134,7 @@ This is a smart home automation system built using an ESP32 microcontroller. It 
 ---
 ## Contributors
 
-- Tanushree Waratkar –  [GitHub](https://github.com/tanushreewaratkar) | [LinkedIn](https://linkedin.com/in/tanushreewaratkar)
+- Tanushree Waratkar –  [GitHub](https://github.com/Tanushree-Waratkar) | [LinkedIn](https://www.linkedin.com/in/tanushree-waratkar-872a63270/)
 
 - Shivam Rao – [Github](https://github.com/Sv9r) | [LinkedIn](https://www.linkedin.com/in/shivam-rao-a87b55311/)
 ---
